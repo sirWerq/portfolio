@@ -15,11 +15,11 @@ const MainComponent = () => {
     )}`;
     setTimeout(() => {
       window.open(urlWa, "_blank");
-    }, 100); // Menambahkan delay 100ms
+    }, 100);
   };
 
   return (
-    <main className="px-4 w-full">
+    <main className="px-4 w-full" id="home">
       <div className="flex w-full justify-center pt-[80px] h-screen">
         <div className="container py-32">
           <div className="flex justify-between">
@@ -61,7 +61,10 @@ const MainComponent = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-full justify-center h-full">
+      <div
+        className="flex w-full justify-center h-full pt-[100px]"
+        id="projects"
+      >
         <div className="container">
           <h2 className="font-bold uppercase text-center text-lg">
             my projects
@@ -96,7 +99,10 @@ const MainComponent = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-full justify-center lg:pt-[250px] h-screen">
+      <div
+        className="flex w-full justify-center lg:pt-[250px] h-screen"
+        id="skills"
+      >
         <div className="container">
           <h2 className="font-bold uppercase text-center text-lg">Skills</h2>
           <div className="flex justify-center flex-wrap lg:grid lg:grid-cols-5 lg:pl-[140px] items-center gap-4 lg:gap-9 py-3">
@@ -191,7 +197,7 @@ const MainComponent = () => {
                 }}
               ></div>
             </div>
-            <div className="mx-auto max-w-2xl text-center">
+            <div className="mx-auto max-w-2xl text-center" id="contact">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 Contact
               </h2>

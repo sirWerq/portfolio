@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
 
 const NavbarComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,36 +51,36 @@ const NavbarComponent = () => {
             >
               <ul className="block lg:flex">
                 <li className="group">
-                  <NavLink
-                    to="/"
+                  <a
+                    href="#home"
                     className="py-2 mx-8 text-sky-500 group-hover:text-blue-700 flex font-semibold cursor-pointer"
                   >
                     Home
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="group">
-                  <NavLink
-                    to="/projects"
+                  <a
+                    href="#projects"
                     className="py-2 mx-8 text-sky-500 group-hover:text-blue-700 flex font-semibold cursor-pointer"
                   >
                     Projects
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="group">
-                  <NavLink
-                    to="/about"
+                  <a
+                    href="#skills"
                     className="py-2 mx-8 text-sky-500 group-hover:text-blue-700 flex font-semibold cursor-pointer"
                   >
-                    About
-                  </NavLink>
+                    Skills
+                  </a>
                 </li>
                 <li className="group">
-                  <NavLink
-                    to="/contact"
+                  <a
+                    href="#contact"
                     className="py-2 mx-8 text-yellow-500 group-hover:text-yellow-700 flex font-semibold cursor-pointer"
                   >
                     Contact
-                  </NavLink>
+                  </a>
                 </li>
               </ul>
             </nav>
