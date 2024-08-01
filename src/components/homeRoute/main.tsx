@@ -2,6 +2,20 @@ import { TypeWritter } from "typewritter";
 import Card from "../card";
 import Timeline from "../timeline";
 
+import profileImage from "../../assets/rifqi.jpg";
+import animelistImage from "../../assets/animelist.png";
+import bookshelfImage from "../../assets/bookshelf.png";
+import bootstrapImage from "../../assets/bootstrap.svg";
+import cssImage from "../../assets/css.svg";
+import htmlImage from "../../assets/html.svg";
+import jsImage from "../../assets/js.svg";
+import tailwindImage from "../../assets/tailwind.svg";
+import tsImage from "../../assets/ts.svg";
+import reactImage from "../../assets/react.svg";
+import nextjsImage from "../../assets/next.svg";
+import viteImage from "../../assets/vite.svg";
+import quranImage from "../../assets/quran.png";
+
 const MainComponent = () => {
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
@@ -53,7 +67,7 @@ const MainComponent = () => {
             </div>
             <div className="hidden lg:block mr-10">
               <img
-                src="../src/assets/rifqi.jpg"
+                src={profileImage}
                 alt=""
                 className="rounded-lg w-[400px] h-[400px]"
               />
@@ -71,19 +85,19 @@ const MainComponent = () => {
           </h2>
           <div className="flex justify-center flex-wrap gap-5 py-4">
             <Card
-              image="../src/assets/quran.png"
+              image={quranImage}
               title="Quran Web"
               description="A web app that provides information about surah quran. you can search surah here or you can browse all the surah. but in this website you can't bookmark etc becase it's only for showing quran surah."
               link="#"
             />
             <Card
-              image="../src/assets/bookshelf.png"
+              image={bookshelfImage}
               title="To Do Web"
               description="A web app that provides information about your to do list. you can search your to do list here or you can browse all your to do list also in this website you can bookmark, edit, delete, and add or replace your to do list."
               link="#"
             />
             <Card
-              image="../src/assets/animelist.png"
+              image={animelistImage}
               title="AnimeList Web"
               description="A web app that provides information about animes. you can search animes here or you can browse all the animes. but in this website you can't rating, bookmark etc becase it's only for anime list."
               link="https://jikan-react.vercel.app/"
@@ -108,63 +122,63 @@ const MainComponent = () => {
           <div className="flex justify-center flex-wrap lg:grid lg:grid-cols-5 lg:pl-[140px] items-center gap-4 lg:gap-9 py-3">
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
               <img
-                src="../src/assets/react.svg"
+                src={reactImage}
                 alt=""
                 className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
               />
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
               <img
-                src="../src/assets/tailwind.svg"
+                src={tailwindImage}
                 alt=""
                 className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
               />
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
               <img
-                src="../src/assets/js.svg"
+                src={jsImage}
                 alt=""
                 className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
               />
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
               <img
-                src="../src/assets/ts.svg"
+                src={tsImage}
                 alt=""
                 className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
               />
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
               <img
-                src="../src/assets/html.svg"
+                src={htmlImage}
                 alt=""
                 className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
               />
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
               <img
-                src="../src/assets/bootstrap.svg"
+                src={bootstrapImage}
                 alt=""
                 className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
               />
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
               <img
-                src="../src/assets/vite.svg"
+                src={viteImage}
                 alt=""
                 className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
               />
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
               <img
-                src="../src/assets/css.svg"
+                src={cssImage}
                 alt=""
                 className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
               />
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
               <img
-                src="../src/assets/next.svg"
+                src={nextjsImage}
                 alt=""
                 className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
               />
