@@ -88,13 +88,13 @@ const MainComponent = () => {
               image={quranImage}
               title="Quran Web"
               description="A web app that provides information about surah quran. you can search surah here or you can browse all the surah. but in this website you can't bookmark etc becase it's only for showing quran surah."
-              link="#"
+              link="https://github.com/sirWerq/react-quran"
             />
             <Card
               image={bookshelfImage}
               title="To Do Web"
               description="A web app that provides information about your to do list. you can search your to do list here or you can browse all your to do list also in this website you can bookmark, edit, delete, and add or replace your to do list."
-              link="#"
+              link="https://github.com/sirWerq/bookshelf-react-tailwind"
             />
             <Card
               image={animelistImage}
