@@ -15,6 +15,10 @@ import reactImage from "../../assets/react.svg";
 import nextjsImage from "../../assets/next.svg";
 import viteImage from "../../assets/vite.svg";
 import quranImage from "../../assets/quran.png";
+import expressImage from "../../assets/express.svg";
+import mysqlImage from "../../assets/mysql.svg";
+import nodeImage from "../../assets/node.svg";
+import postgre from "../../assets/postgre.svg";
 
 const MainComponent = () => {
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
@@ -114,79 +118,145 @@ const MainComponent = () => {
         </div>
       </div>
       <div
-        className="flex w-full justify-center lg:pt-[250px] h-screen"
+        className="flex w-full justify-center lg:pt-[250px] h-full lg:h-screen"
         id="skills"
       >
         <div className="container">
           <h2 className="font-bold uppercase text-center text-lg">Skills</h2>
           <div className="flex justify-center flex-wrap lg:grid lg:grid-cols-5 lg:pl-[140px] items-center gap-4 lg:gap-9 py-3">
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
-              <img
-                src={reactImage}
-                alt=""
-                className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
-              />
+              <a href="https://react.dev/learn" target="_blank">
+                <img
+                  src={reactImage}
+                  alt="react"
+                  className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
+                />
+              </a>
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
-              <img
-                src={tailwindImage}
-                alt=""
-                className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
-              />
+              <a href="https://tailwindcss.com" target="_blank">
+                <img
+                  src={tailwindImage}
+                  alt="tailwind"
+                  className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
+                />
+              </a>
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
-              <img
-                src={jsImage}
-                alt=""
-                className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
-              />
+              <a href="https://www.w3schools.com/js/" target="_blank">
+                <img
+                  src={jsImage}
+                  alt="javascript"
+                  className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
+                />
+              </a>
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
-              <img
-                src={tsImage}
-                alt=""
-                className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
-              />
+              <a
+                href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html"
+                target="_blank"
+              >
+                <img
+                  src={tsImage}
+                  alt="typescript"
+                  className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
+                />
+              </a>
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
-              <img
-                src={htmlImage}
-                alt=""
-                className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
-              />
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="_blank"
+              >
+                <img
+                  src={htmlImage}
+                  alt="html"
+                  className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
+                />
+              </a>
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
-              <img
-                src={bootstrapImage}
-                alt=""
-                className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
-              />
+              <a
+                href="https://getbootstrap.com/docs/4.1/getting-started/introduction/"
+                target="_blank"
+              >
+                <img
+                  src={bootstrapImage}
+                  alt="bootstrap"
+                  className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
+                />
+              </a>
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
-              <img
-                src={viteImage}
-                alt=""
-                className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
-              />
+              <a href="https://vitejs.dev/" target="_blank">
+                <img
+                  src={viteImage}
+                  alt="vite"
+                  className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
+                />
+              </a>
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
-              <img
-                src={cssImage}
-                alt=""
-                className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
-              />
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+              >
+                <img
+                  src={cssImage}
+                  alt="css"
+                  className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
+                />
+              </a>
             </div>
             <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
-              <img
-                src={nextjsImage}
-                alt=""
-                className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
-              />
+              <a href="https://nextjs.org/docs" target="_blank">
+                <img
+                  src={nextjsImage}
+                  alt="next js"
+                  className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
+                />
+              </a>
+            </div>
+            <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
+              <a href="https://expressjs.com/" target="_blank">
+                <img
+                  src={expressImage}
+                  alt="express"
+                  className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
+                />
+              </a>
+            </div>
+            <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
+              <a href="https://dev.mysql.com/doc/" target="_blank">
+                <img
+                  src={mysqlImage}
+                  alt="mysql"
+                  className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
+                />
+              </a>
+            </div>
+            <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
+              <a href="https://nodejs.org/docs/latest/api/" target="_blank">
+                <img
+                  src={nodeImage}
+                  alt="node"
+                  className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
+                />
+              </a>
+            </div>
+            <div className="flex justify-center items-center w-[120px] h-[120px] bg-slate-900 rounded-md group">
+              <a href="https://www.postgresql.org/docs/" target="_blank">
+                <img
+                  src={postgre}
+                  alt="postgre"
+                  className="w-[100px] h-[100px] grayscale group-hover:grayscale-0"
+                />
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex w-full justify-center h-full">
+      <div className="flex w-full justify-center h-full mt-4">
         <div className="container">
           <h2 className="font-bold uppercase text-center text-lg mb-4">
             Education
