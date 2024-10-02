@@ -103,7 +103,7 @@ const MainComponent = () => {
             <Card
               image={animelistImage}
               title="AnimeList Web"
-              description="A web app that provides information about animes. you can search animes here or you can browse all the animes. only for anime list. [you can see this website by clicking the button and will be updated]"
+              description="A web app that provides information about animes. you can search animes here or you can browse all the animes. only for anime list. [you can see this website by clicking the button and in the future more feature will updated]"
               link="https://jikan-react.vercel.app/"
             />
           </div>
