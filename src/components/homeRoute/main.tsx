@@ -103,18 +103,11 @@ const MainComponent = () => {
             <Card
               image={animelistImage}
               title="AnimeList Web"
-              description="A web app that provides information about animes. you can search animes here or you can browse all the animes. but in this website you can't rating, bookmark etc becase it's only for anime list."
+              description="A web app that provides information about animes. you can search animes here or you can browse all the animes. only for anime list. [you can see this website by clicking the button and will be updated]"
               link="https://jikan-react.vercel.app/"
             />
           </div>
-          <div className="text-end lg:mr-44">
-            <a
-              href="#"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-500 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300"
-            >
-              Show More
-            </a>
-          </div>
+          <div className="text-end lg:mr-44"></div>
         </div>
       </div>
       <div
