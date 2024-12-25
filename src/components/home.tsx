@@ -16,14 +16,16 @@ import nextjsImage from './../assets/next.svg';
 import viteImage from './../assets/vite.svg';
 import quranImage from './../assets/quran.png';
 import emailImage from './../assets/Email.png';
+import bootstrapProjectImage from './../assets/bootstrap-project.png';
+import xyzImage from './../assets/xyz.png';
 
 const HomePage = () => {
     return (
         <main className='px-4 w-full' id='home'>
             <div className='flex w-full justify-center pt-[80px] h-screen'>
                 <div className='container py-32'>
-                    <div className='flex justify-between'>
-                        <div>
+                    <div className='flex flex-col lg:flex-row justify-between items-center gap-6'>
+                        <div className='order-2 lg:order-1 text-center lg:text-start'>
                             <h1 className='font-bold text-2xl lg:ml-[100px] lg:mt-[100px] font-serif'>
                                 HELLO THERE!!
                             </h1>
@@ -51,7 +53,7 @@ const HomePage = () => {
                                 />
                             </div>
                         </div>
-                        <div className='hidden lg:block mr-10'>
+                        <div className='lg:block mr-10 order-1 lg:order-2'>
                             <img
                                 src={profileImage}
                                 alt=''
@@ -72,21 +74,33 @@ const HomePage = () => {
                     <div className='flex justify-center flex-wrap gap-5 py-4'>
                         <Card
                             image={quranImage}
-                            title='Quran Web'
+                            title='Quran Web (Github)'
                             description="A web app that provides information about surah quran. you can search surah here or you can browse all the surah. but in this website you can't bookmark etc becase it's only for showing quran surah."
                             link='https://github.com/sirWerq/react-quran'
                         />
                         <Card
                             image={bookshelfImage}
-                            title='To Do Web'
+                            title='To Do Web (Github)'
                             description='A web app that provides information about your to do list. you can search your to do list here or you can browse all your to do list also in this website you can bookmark, edit, delete, and add or replace your to do list.'
                             link='https://github.com/sirWerq/bookshelf-react-tailwind'
                         />
                         <Card
                             image={animelistImage}
-                            title='AnimeList Web'
+                            title='AnimeList Web (Active)'
                             description='A web app that provides information about animes. you can search animes here or you can browse all the animes. only for anime list. [you can see this website by clicking the button and in the future more feature will updated]'
                             link='https://jikan-react.vercel.app/'
+                        />
+                        <Card
+                            image={bootstrapProjectImage}
+                            title='Fun Bootstrap Project (Github)'
+                            description='This project was created while learning Bootstrap in React.js. It showcases responsive design and integrates Bootstrap elements with React to build an engaging interface. Check out the GitHub repository for more details!'
+                            link='https://github.com/sirWerq/coba-bootstrap-react'
+                        />
+                        <Card
+                            image={xyzImage}
+                            title='CCID Circle Web (Active)'
+                            description="I contributed to my friend's website by resolving UI bugs, including issues with dark mode, background inconsistencies, and more. My role focused on enhancing the site's visual stability and user experience."
+                            link='https://www.callcenterofficial.xyz/'
                         />
                     </div>
                     <div className='text-end lg:mr-44'></div>
@@ -212,19 +226,7 @@ const HomePage = () => {
             </div>
             <div className='flex w-full justify-center h-full pt-10 lg:pt-[250px]'>
                 <div className='container'>
-                    <div className='isolate bg-white px-6 py-24 sm:py-32 lg:px-8'>
-                        <div
-                            className='absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]'
-                            aria-hidden='true'
-                        >
-                            <div
-                                className='relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]'
-                                style={{
-                                    clipPath:
-                                        'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-                                }}
-                            ></div>
-                        </div>
+                    <div className='bg-white px-6 py-24 sm:py-32 lg:px-8'>
                         <div
                             className='mx-auto max-w-2xl text-center py-12'
                             id='contact'
